@@ -20,6 +20,7 @@ print(studentIds)
 # face_recognition uses rgb
 # so we are converting our images into rgb , its basically for encoding purposes
 def findEncodings(imagesList):
+    # storing the encoded images
     encodeList = []
     for img in imagesList:
         # we convert from bgr to rgb
@@ -33,8 +34,7 @@ encodeListKnown = findEncodings(imgList)
 encodeListKnownWithIds = [encodeListKnown, studentIds]
 print("Encoding Completed !")
 
-# pickle file creationg and storing the data for the webcam recognition
-
+# pickle file creation and storing the data for the webcam recognition
 file = open("EncodeFile.p","wb")
 pickle.dump(encodeListKnownWithIds,file)
 file.close()
