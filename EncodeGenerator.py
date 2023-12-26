@@ -8,8 +8,8 @@ from firebase_admin import db
 from firebase_admin import  storage
 
 cred = credentials.Certificate("serviceAccountKey.json")
-firebase_admin.initialize_app(cred, {'databaseURL': "https://fras-eeb4b-default-rtdb.asia-southeast1.firebasedatabase.app/",
-                               'storageBucket': "fras-eeb4b.appspot.com"})
+firebase_admin.initialize_app(cred, {'databaseURL': "https://fras-1faab-default-rtdb.firebaseio.com/",
+                               'storageBucket': "fras-1faab.appspot.com"})
 
 
 # Importing student images
